@@ -1,9 +1,10 @@
-import Route from "../classes/Route";
+import AppRoute from "../classes/AppRoute";
+import Route from "../classes/MethodsRoute";
 import Middleware from "../classes/Middleware";
 
 interface serverConfig {
     port?: number;
-    routes?: Route[];
+    routes?: AppRoute[];
     middlewares?: Middleware[];
 };
 
