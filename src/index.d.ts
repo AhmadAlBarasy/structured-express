@@ -12,7 +12,7 @@ import Middleware from './classes/Middleware';
 
 export interface serverConfig {
     port?: number;
-    routes?: AppRoute[];
+    routes?: (AppRoute | MethodsRoute)[];
     middlewares?: Middleware[];
 }
 
