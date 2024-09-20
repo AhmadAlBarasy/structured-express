@@ -10,13 +10,13 @@ import AppRoute from './classes/AppRoute';
 import Middleware from './classes/Middleware';
 
 
-export interface serverConfig {
+export interface ServerConfig {
     port?: number;
     routes?: (AppRoute | MethodsRoute)[];
     middlewares?: Middleware[];
 }
 
-export function startServer (config: serverConfig): Application
+export function startServer (config: ServerConfig): Application
 
 export type AppRequestHandler = RequestHandler | RequestHandler[] | Router;
 

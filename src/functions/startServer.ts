@@ -1,8 +1,8 @@
 import express, { Application, Router } from 'express';
-import serverConfig from '../interfaces/serverConfig';
+import ServerConfig from '../interfaces/serverConfig';
 import { bindRoutes, bindMiddlewares } from './binders';
 
-const startServer = (config: serverConfig): Application => {
+const startServer = (config: ServerConfig): Application => {
     const { routes, middlewares, port } = config;
     const app: Application = express();
 
